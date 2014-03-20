@@ -1,0 +1,91 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.logo , .logo:hover{
+	color: white;
+}
+
+a {
+  color: #007DC4;
+}
+
+.bs-docs-booticon-lg {
+font-size: 84px;
+width: initial;
+}
+
+.bs-docs-masthead, .bs-docs-header {
+position: relative;
+padding: 30px 15px;
+color: #cdbfe3;
+text-align: center;
+text-shadow: 0 1px 0 rgba(0,0,0,.1);
+background-color: #545F99;
+background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,#548399 100%);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+}
+
+.bs-docs-booticon-outline {
+background-color: transparent;
+border: none;
+}
+
+.highlightor {
+background-color: rgba(100, 212, 255, 0.55);
+}
+
+a:hover, a:focus {
+color: #2a6496;
+text-decoration: none;
+}
+
+.banner
+{
+	color: whitesmoke;
+background-image: linear-gradient(to bottom,#000000 0,#FF00AD 100%);
+}
+
+.glyphicon {
+margin-top: 5px;
+margin-bottom: 10px;
+font-size: 24px;
+color: #2a6496;
+line-height:2.3;
+}
+
+.time{
+font-weight: 800;
+font-size: 14px;
+color: gray;	
+}
+
+.sidebar-intro {
+	margin-left:20px;
+}
+
+.newsly-header p{
+margin-right: inherit;
+color: #FFFFFF;
+}
+
+.bs-docs-sidebar .nav>.active>a, .bs-docs-sidebar .nav>.active:hover>a, .bs-docs-sidebar .nav>.active:focus>a {
+padding-left: 18px;
+font-weight: 700;
+color: #2a6496;
+background-color: transparent;
+border-left: 2px solid #2a6496;
+}
+
+.commentBox{
+padding: 20px 50px;
+padding-top: 20px;
+background-color: rgba(2, 145, 172, 0.3);
+display:none;
+}
+
+.commentBox button{ 
+float: right;
+}

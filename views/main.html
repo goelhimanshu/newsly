@@ -1,0 +1,57 @@
+<html lang="en" ng-app="newsReader">
+
+<head>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/docs.min.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+  <script src="/javascripts/app.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/docs.min.js"></script>
+  <script src="/javascripts/services.js"></script>
+  <script src="/javascripts/controllers.js"></script>
+</head>
+
+<body class="bs-docs-home" style="" data-twttr-rendered="true">
+  <!-- Page content of course! -->
+  
+<div class="bs-docs-header newsly-header" id="content">
+      <div class="container">
+      <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline"><a class="logo" href="/">Newsly!!</a></span>
+      <p class="lead">Transforming the way to read the news.</p>
+      </div>
+    </div>
+  <div class="container bs-docs-container">
+    <div class="row">
+      <div ng-view class="col-lg-9"></div>
+      <div class="col-lg-3" ng-controller="featuredArticlesCtrl">
+        <div class="bs-docs-sidebar hidden-print affix" role="complementary" ng-model="query">
+          <div ng-switch on="list.length">
+                  <ul class="nav bs-docs-sidenav" ng-switch-when="0">     
+                    <li class="active">No Articles in featured List.</li>
+                  </ul>
+                  <div ng-switch-default>
+                    <ul class="nav bs-docs-sidenav" ng-repeat="article in list">
+                      
+                        <li class="active">
+                          <a href="#/news/{{article.id}}">{{article.headline}}</a>
+                          <p class="sidebar-intro">{{article.intro}}</p>
+                        </li>
+                        <li class="divider"></li>
+                       
+                    </ul>
+                </div>
+                  <a class="back-to-top" href="#top">
+                    Back to top
+                  </a>
+                </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
