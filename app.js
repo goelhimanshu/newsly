@@ -43,6 +43,8 @@ app.post('/article/:id', routes.addMarkdown);
 app.get('/comments/:id', routes.comments);
 app.post('/comments/:id', routes.addComment);
 
+app.post('/notes/:id', routes.addNote);
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

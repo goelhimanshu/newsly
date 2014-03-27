@@ -1,3 +1,9 @@
+/*
+ * Description : Style sheet scripts for newsly application front-end
+ * Author : Himanshu Goel
+ * Date : 27th March 2014
+ */
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -35,6 +41,10 @@ border: none;
 
 .highlightor {
 background-color: rgba(100, 212, 255, 0.55);
+}
+
+.note {
+background-color: rgba(255, 0, 0, 0.38);
 }
 
 a:hover, a:focus {
@@ -88,4 +98,23 @@ display:none;
 
 .commentBox button{ 
 float: right;
+}
+
+.glyphicon{
+	margin-top: inherit;
+	font-size: 15px;
+	margin-bottom: inherit;
+}
+
+form input{
+	color : black;
+	margin-bottom: 10px;
+}
+
+form button {
+	float: right;
+}
+
+.tooltip_options a{
+margin:5px;
 }
